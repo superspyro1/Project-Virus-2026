@@ -1,0 +1,81 @@
+# Unreal Engine Gitignore - WinterBreakJam
+# Supports Windows and Mac builds
+
+# ============================================
+# Compiled Binaries (Ignore most, keep Win64 & Mac)
+# ============================================
+Binaries/Linux/
+Binaries/Android/
+Binaries/IOS/
+Binaries/HTML5/
+!Binaries/Win64/
+!Binaries/Mac/
+
+# ============================================
+# Build Artifacts
+# ============================================
+Intermediate/
+Plugins/**/Intermediate/
+DerivedDataCache/
+Build/
+
+# ============================================
+# Editor & Project Generated Files
+# ============================================
+Saved/
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.sln.DotSettings
+
+# ============================================
+# Compiled Code Objects (but NOT Binaries/ - those are committed)
+# ============================================
+*.obj
+*.lib
+*.a
+*.o
+*.so
+*.dylib
+*.out
+*.app
+
+# ============================================
+# Source Art (Keep source, ignore compiled)
+# ============================================
+SourceArt/**/*.png
+SourceArt/**/*.tga
+
+# ============================================
+# Built/Cooked Data
+# ============================================
+*_BuiltData.uasset
+
+# ============================================
+# Visual Studio
+# ============================================
+.vs/
+.vscode/
+*.code-workspace
+*.VC.db
+*.VC.opendb
+*.opensdf
+*.sdf
+*.suo
+
+# ============================================
+# IDE & OS Files
+# ============================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# ============================================
+# Unreal Specific Generated Files
+# ============================================
+.vsconfig
+*.xcodeproj
+*.xcworkspace
